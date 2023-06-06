@@ -20,7 +20,6 @@ import './commands'
 // require('./commands')
 // @ts-ignore
 import addContext = require('mochawesome/addContext');
-import 'cypress-real-events';
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
