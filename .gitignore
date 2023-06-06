@@ -1,0 +1,8 @@
+# dependencies
+/node_modules
+
+#logs
+screenshots
+downloads
+mochareports
+reports
