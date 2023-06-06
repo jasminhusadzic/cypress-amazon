@@ -8,7 +8,8 @@
     "e2e:run": "npx cypress run --browser chrome",
     "e2e:prod:open": "CYPRESS_BASE_URL=https://www.amazon.com npm run e2e:open",
     "clean-reports": "rm -rf cypress/reports cypress/videos mochareports",
-    "merge-reports": "mochawesome-merge cypress/reports/*.json > cypress/reports/index.json"
+    "merge-reports": "mochawesome-merge cypress/reports/*.json > cypress/reports/index.json",
+    "generate-report": "marge cypress/reports/index.json --inline --reportDir mochareports && cp cypress/reports/index.json mochareports/index.json && rsync -avzh --ignore-missing-args cypress/reports/screenshots mochareports/"
   },
   "repository": {
     "type": "git",
